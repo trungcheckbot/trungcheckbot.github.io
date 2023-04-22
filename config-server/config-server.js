@@ -1,2 +1,2 @@
-const server = "https://a8df-13-215-191-173.ngrok.io";
+const server = "https://1995-54-255-239-6.ngrok-free.app";
 //const server = "http://localhost";
