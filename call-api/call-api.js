@@ -44,6 +44,7 @@ function setListCookies(res){
     var content = res['content'];
     content.forEach(element => {
         var checked = element['status'] ? 'checked=""' : "";
+        var existed = element['existed'] ? 'red' : 'blue';
         let htmlSegment = 
         `<tr id="tr-cookies${count}" scope="row" >
             <td>
@@ -54,7 +55,7 @@ function setListCookies(res){
             </td>
             <td>${count}</td>
             <td>${element['id']}</td>
-            <td id="txt-username${count}">${element['username']}</td>
+            <td style='color: ${existed}' id="txt-username${count}">${element['username']}</td>
             <td id="txt-password${count}">${element['password']}</td>
             <td id="txt-ipAddress${count}">${element['ip']}</td>
             <td id="txt-device${count}">${element['device']}</td>`;
